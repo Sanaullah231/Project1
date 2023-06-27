@@ -1,0 +1,358 @@
+/* variables */
+:root {
+
+    /* text famity for non-header */
+    --text-style:'Kanit', sans-serif;
+
+    /* text family for header */
+    --header:header;
+
+    /* primary color  */
+    --primary-color: #ef2f4b;
+}
+/* universal */
+* {
+    margin: 0px;
+    padding: 0px;
+    /* border: 2px solid blue; */
+}
+
+.uni-padding {
+    padding: 0 7%;
+}
+
+/* google font  */
+@font-face {
+    font-family: header;
+    src: url(../font/roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: para;
+    src: url(../font/belanosima/Belanosima-Regular.ttf);
+}
+
+/* font allocation */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: header;
+}
+
+p {
+    font-family: var(--text-style);
+}
+
+/* topbar */
+#topbar {
+    background-color: #463f3a;
+    overflow: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#phone {
+    color: white;
+    font-weight: 300;
+    float: left;
+    margin-top: 2px;
+}
+#social-icon{
+    float: right;
+}
+.fa-brands{
+    padding: 7px;
+    border-radius: 50%;
+}
+.fa-facebook{
+    color:  #1877F2;
+}
+.fa-instagram{
+    color:  #833AB4;
+}
+.fa-whatsapp{
+    color: #25D366;
+}
+.fa-twitter{
+    color:  #1DA1F2;
+}
+
+/* logo bar  */
+#logobar img{
+    height: 70px;
+    margin: 20px 0px;
+    margin-left: -15px;
+}
+
+/* nav bar  */
+#navbar{
+    /* background-color: #70a1ff; */
+    background-color: var(--primary-color);
+}
+#navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 18px 12px;
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--text-style);
+    font-size: 18px;
+}
+
+/* poster */
+#poster{
+    background-image: url(../image/bg-img1.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#poster p{
+    width: 70%;
+    margin-top: 10px;
+    text-align: center;
+}
+#poster h1{
+    font-size: 40px;
+}
+
+/* animation on welcome us  */
+#poster h1:hover{
+    transform: scale(1.2 , 1.2);
+    transition-duration: 2s;
+}
+#poster p:hover{
+    transform: scale(1.2 , 1.2);
+    transition-duration: 2s;
+}
+
+/* shop now section and explore us  */
+#shopnow{
+   overflow: auto;
+
+   text-align: center;
+}
+.section33{
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0px 50px 0px 50px;
+    margin-top: 20px;
+}
+.section33 a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-style: var(--header);
+
+}
+#shopnow p{
+    text-align: justify;
+    margin-bottom: 13px;
+}
+#shopnow h2{
+    margin: 15px 0px;
+    color: var(--primary-color);
+}
+.section33 img{
+    border-radius: 50% ;
+}
+.section-heading{
+    color: var(--primary-color);
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+/* contact us section  */
+#contact-container{
+    color: white;
+    background-color: var(--primary-color);
+    overflow: auto;
+    margin-top: 50px;
+}
+#section70{
+    width: 70%;
+    float: left;
+}
+#section70 h1{
+    padding: 25px 0px;
+}
+#section70 p{
+    padding-bottom: 20px;
+}
+#section30{
+    width: 30%;
+    float: right;
+    text-align: center;
+    padding-top: 67px;
+}
+
+#contact-btn{
+    background-color: white;
+    padding: 15px 50px;
+    text-decoration: none;
+    color: var(--primary-color);
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--header);
+
+
+}
+
+/* subscribe section  */
+#subscribe-section{
+    background-color: var(--primary-color);
+    color: white;
+    overflow: auto;
+    padding-top:13px ;
+    padding-bottom: 40px;
+    margin-top: 45px;
+}
+.section50{
+    width: 50%;
+    float: left;
+}
+.section50 h2{
+    text-align: right;
+    font-size: 27px;
+    padding-right: 50px;
+    padding-top: 33px;
+}
+.section50 form{
+    padding-top: 29px;
+}
+input[type="email"]{
+    padding: 10px 15px;
+    font-size: 15px;
+    color: var(--primary-color);
+    margin-right: 20px;
+    border: 0px;
+    width: 45%;
+}
+
+input[type="submit"]{
+    padding: 8px 35px;
+    font-size: 15px;
+    color: var(--primary-color);
+    border: 0px;
+
+}
+/* footer  */
+
+#implinks{
+    background-color: #0F1111;
+    color: white;
+    overflow: auto;
+}
+.div33{
+    float: left;
+    width: 33.33%;
+    padding: 25px 50px;
+    box-sizing: border-box;
+}
+.div33 h3{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.div33 p{
+    text-align: justify;
+}
+.div33 ul li{
+    list-style-type: none;
+    padding: 3px 0px;
+    text-align: center;
+}
+.div33 ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--text-style);
+}
+#address{
+    text-align: center;
+}
+#copyright{
+    background-color: #131A22;
+    color: white;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+
+/* responsive ipad  */
+@media only screen and (max-width:768px){
+    .section33 img{
+        height: 130px;
+    }
+    .section50 h2{
+        /* padding-right: 22px; */
+        font-size: 24px;
+    }
+    .div33{
+        padding-left: 43px;
+        padding-right: 43px;
+    }
+    #subscribe-section{
+        text-align: centers;
+    }
+}
+
+/* mobile responsive */
+@media only screen and (max-width:500px){
+    #logobar{
+        text-align: center;
+    }
+    #poster h1{
+        font-size: 31px;
+    }
+    #poster {
+        height: 320px;
+    }
+    .section33,.section50{
+        width: 100%;
+    }
+    #section70{
+        width: 100%;
+        text-align: center;
+    }
+    #section30{
+        width: 100%;
+        padding-top: 12px;
+        margin-bottom: 28px;
+    }
+    #contact-container{
+        margin-top: 28px;
+    }
+    #section70 h1{
+        padding: 13px 0px;
+    }
+    input[type="email"] {
+        padding: 10px 12px;
+    }
+    .section50 h2{
+        text-align: center;
+        padding-top: 13px;
+        /* padding-right: 16px; */
+        padding-right: 0px;
+    }
+    .section50 form{
+        text-align: center;
+    }
+    .div33{
+        width: 100%;
+    }
+
+}
